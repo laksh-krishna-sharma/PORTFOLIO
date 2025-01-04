@@ -1,4 +1,4 @@
-import { HERO_CONTENT } from '../constants/index.ts';
+import { INTRO_CONTENT } from '../constants/index.ts';
 // import profilePic from '../assets/kevinRushProfile.png';
 
 function Intro(): JSX.Element {
@@ -17,7 +17,7 @@ function Intro(): JSX.Element {
               </span>
 
               <p className="my-2 max-w-xl text-lg py-6 font-light tracking-tighter">
-                {HERO_CONTENT}
+                {INTRO_CONTENT}
               </p>
             </div>
           </div>
