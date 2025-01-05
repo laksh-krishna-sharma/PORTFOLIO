@@ -1,5 +1,14 @@
 import { INTRO_CONTENT } from '../constants/index.ts';
-// import profilePic from '../assets/kevinRushProfile.png';
+// import profilePic from '../assets/introGif.gif';
+import {  motion } from 'framer-motion';
+
+const container = (delay: number) => ({
+  hidden: { x:-100,opacity: 0 },
+  visible: { x: 0,
+    opacity: 1, 
+    transition: { duration: 0.5, delay: delay } 
+  },
+});
 
 function Intro(): JSX.Element {
   return (
@@ -8,24 +17,39 @@ function Intro(): JSX.Element {
         <div className="flex flex-wrap">
           <div className="w-full lg:w-1/2">
             <div className="flex flex-col items-center lg:items-start">
-              <h1 className="pb-16 text-4xl font-thin tracking-tight lg:mt-16 lg:text-6xl">
+              <motion.h1 
+                variants={container(0.2)}
+                initial="hidden"
+                animate="visible"
+                className="pb-16 text-3xl font-thin tracking-tight lg:mt-16 lg:text-6xl">
                 Laksh Krishna Sharma
-              </h1>
+              </motion.h1>
 
-              <span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent">
+              <motion.span
+                variants={container(0.5)}
+                initial="hidden"
+                animate="visible"
+                className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent">
                 Software Developer
-              </span>
+              </motion.span>
 
-              <p className="my-2 max-w-xl text-lg py-6 font-light tracking-tighter">
+              <motion.p 
+                variants={container(1)}
+                initial="hidden"
+                animate="visible"
+                className="my-2 max-w-xl text-lg py-6 font-light tracking-tighter">
                 {INTRO_CONTENT}
-              </p>
+              </motion.p>
             </div>
           </div>
-          {/* <div className='w-full lg:w-1/2 lg:p-8'>
-                    <div className='flex justify-center'>
-                        <img src={profilePic} alt="Profile" />
-                    </div>
-                </div> */}
+          <div className="w-full lg:w-1/2 lg:p-8 flex items-center justify-center">
+            {/* <motion.img 
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 1.5 }}
+              width={450} height={450} className="rounded-lg mt-8 mx-auto" src={profilePic} alt="Profile" /> */}
+          </div>
+
         </div>
       </div>
     </>
