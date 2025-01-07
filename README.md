@@ -30,7 +30,7 @@ npm install --force
 ```bash
 npm run dev
 
----
+
 
 ## Customization
 
