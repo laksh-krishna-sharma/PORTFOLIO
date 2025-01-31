@@ -11,10 +11,10 @@ I thrive in collaborative environments, as reflected in my contributions to reno
 export const EXPERIENCES = [
   {
     year: 'Dec 2024 - Present',
-    role: 'Frontend Developer Intern',
+    role: 'Full-Stack Developer Intern',
     company: 'VenueMonk',
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ['Javascript', 'React.js', 'firebase'],
+    description: ` Worked as a Full Stack MERN Developer at VenueMonk. Developed a delayed popup feature in React that triggers 10 seconds after closing an initial popup. Migrated legacy backend callback APIs to modern async/await APIs. Fixed and improved CSS styling across the platfor.`,
+    technologies: ['MERN', 'Redis', 'RabbitMQ', 'Redux'],
   },
 ];
 
