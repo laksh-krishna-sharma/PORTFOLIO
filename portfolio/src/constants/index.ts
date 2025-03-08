@@ -13,29 +13,29 @@ export const EXPERIENCES = [
     year: 'Dec 2024 - Present',
     role: 'Full-Stack Developer Intern',
     company: 'VenueMonk',
-    description: ` Worked as a Full Stack MERN Developer at VenueMonk. Developed a delayed popup feature in React that triggers 10 seconds after closing an initial popup. Migrated legacy backend callback APIs to modern async/await APIs. Fixed and improved CSS styling across the platfor.`,
-    technologies: ['MERN', 'Redis', 'RabbitMQ', 'Redux'],
+    description: `Worked as a Full Stack MERN Developer at VenueMonk, developing features, modernizing APIs with async/await, and integrating Redis and RabbitMQ. Migrated Flask legacy code to FastAPI, implementing new features and endpoints with LLMs using LangChain, OpenAI, and ClaudAI.`,
+    technologies: ['MERN', 'Redis', 'RabbitMQ', 'Redux', 'FastAPI', 'LangChain', 'OpenAI', 'ClaudeAI'],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: 'QUANTITATIVE STRATEGIES (ML OPTIMIZATION)',
+    title: 'Neural Network from Scratch',
     description:
-      'This project implements an algorithmic trading strategy using Backtrader and XGBoost to optimize trading decisions based on technical indicators. The strategy is backtested using historical data and optimized through machinelearning to improve its predictive accuracy.',
-    technologies: ['Python', 'XGBoost', 'pandas', 'numpy', 'matplotlib'],
+      'Built a two-layer neural network from scratch using NumPy on MNIST, implementing forward propagation, backpropagation, and gradient descent.',
+    technologies: ['Python', 'NumPy', 'MNIST'],
   },
   {
-    title: 'Spam Detection System',
+    title: 'Spam Detection Text Classification',
     description:
-      'Developed a multi-lingual text classification model to detect spam messages in English, French, and German using Logistic Regression. Preprocessed data using TfidfVectorizer for language-agnostic feature extraction. Evaluated the model using accuracy metrics and confusion matrix analysis.',
-    technologies: ['Python', 'Scikit-learn', 'Pandas', 'Numpy', 'Matplotlib'],
+      'Built a multi-lingual spam classifier using Logistic Regression and TfidfVectorizer. Integrated Celery with Redis for async tasks. Evaluated with accuracy metrics.',
+    technologies: ['Python', 'Scikit-learn', 'TfidfVectorizer', 'Celery', 'Redis'],
   },
   {
-    title: 'Sorting Algorithm Visualizer',
+    title: 'Quantitative Strategies (ML Optimization)',
     description:
-      'Designed and developed an interactive web application for visualizing various sorting algorithms with step-by-step animations.',
-    technologies: ['C++'],
+      'Implemented an algorithmic trading strategy using Backtrader and XGBoost to optimize trading decisions based on technical indicators. Backtested using historical data and improved predictive accuracy through machine learning.',
+    technologies: ['Python', 'XGBoost', 'Backtrader', 'pandas', 'numpy', 'matplotlib'],
   },
   {
     title: 'Open Source Contributions',
@@ -44,7 +44,6 @@ export const PROJECTS = [
     technologies: ['Python', 'Git', 'Open Source Workflow'],
   },
 ];
-
 
 export const CONTACT = {
   phoneNo: '+91 9717740048',
